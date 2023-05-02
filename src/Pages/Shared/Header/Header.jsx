@@ -53,7 +53,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link className=" btn-active font-medium hover:text-sky-400 rounded-sm p-2.5 m-0">login</Link>
+          <Link to="/login" className=" btn-active font-medium hover:text-sky-400 rounded-sm p-2.5 m-0">login</Link>
         </div>
       </div>
     </div>
