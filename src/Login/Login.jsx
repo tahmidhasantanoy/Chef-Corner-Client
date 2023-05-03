@@ -41,7 +41,7 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-info">Login</button>
+                <button className="btn btn-info rounded-sm">Login</button>
               </div>
               <div className="flex mt-5">
               <hr className="w-1/2 mt-3.5"/>
