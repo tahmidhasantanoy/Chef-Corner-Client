@@ -1,16 +1,18 @@
 // import React from 'react';
 
 import { FaGlassCheers, FaThumbsUp } from "react-icons/fa";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
+import Receipe from "./Receipe";
 
 const ChefReceipe = () => {
   // const {id} = useParams()
   const specificShefData = useLoaderData();
-  console.log(specificShefData);
+//   console.log(specificShefData);
 
-  const { bio, chefImage, chefName, experience, numRecipes,totalLikes } = specificShefData;
+  const { bio, chefImage, chefName, experience, numRecipes,totalLikes,recipes } = specificShefData;
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div>
+        <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src={chefImage}
@@ -26,6 +28,14 @@ const ChefReceipe = () => {
           <button className="btn btn-primary ml-2"><FaGlassCheers className="mr-2" /> {numRecipes}</button>
         </div>
       </div>
+    </div>
+
+    {/* recepies */}
+    <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-20 mx-20 my-5">
+    {
+        recipes.map((receipe,idx) => <Receipe key={idx} receipe={receipe}></Receipe>)
+    }
+    </div>
     </div>
   );
 };
