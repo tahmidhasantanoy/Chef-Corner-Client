@@ -2,8 +2,18 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
 import ActiveLink from "../../Home/ActiveLink/ActiveLink";
+import { FaUserCircle } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((err) => console.log(err.message));
+  };
   return (
     <div>
       <div className="navbar bg-base-300">
@@ -29,17 +39,21 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-              {/* <Link to="/">Home</Link> */}
-              </li>
+              <li>{/* <Link to="/">Home</Link> */}</li>
 
               <li>
                 <ActiveLink>Blog</ActiveLink>
               </li>
             </ul>
           </div>
-          <Link to="/" className="btn  .btn-active p-2 normal-case rounded-sm text-xl hover:text-cyan-400 .active:bg-white focus:outline-none focus:ring focus:text-white">
-           <span className="text-info pe-1 font-medium"> Chef</span> <button className=".btn .btn-info bg-contain bg-info .rounded-md text-white p-0.5 ms-1">corner</button>
+          <Link
+            to="/"
+            className="btn  .btn-active p-2 normal-case rounded-sm text-xl hover:text-cyan-400 .active:bg-white focus:outline-none focus:ring focus:text-white"
+          >
+            <span className="text-info pe-1 font-medium"> Chef</span>{" "}
+            <button className=".btn .btn-info bg-contain bg-info .rounded-md text-white p-0.5 ms-1">
+              corner
+            </button>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -54,7 +68,23 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className=" btn-active font-medium hover:text-sky-400 rounded-sm p-2.5 m-0">login</Link>
+          <FaUserCircle className="mr-3" style={{ fontSize: "2rem" }} />
+          {user ? (
+            <Link
+              to="/"
+              className=" btn-active font-medium hover:text-sky-400 rounded-sm p-2.5 m-0"
+              onClick={handleLogOut}
+            >
+              logOut
+            </Link>
+          ) : (
+            <Link
+              to="/login"
+              className=" btn-active font-medium hover:text-sky-400 rounded-sm p-2.5 m-0"
+            >
+              login
+            </Link>
+          )}
         </div>
       </div>
     </div>
