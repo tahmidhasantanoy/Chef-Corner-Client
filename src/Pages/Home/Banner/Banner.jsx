@@ -6,10 +6,7 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="hero min-h-screen bg-[image:var(--image-url)]"
-        // style={{
-        //   backgroundImage: `url("/images/stock/photo-1507358522600-9f71e620c44e.jpg")`,
-        // }}
+        className="hero min-h-screen bg-[image:var(--image-url)] mb-28"
         style={{'--image-url': `url(${banner})`}} 
       >
         <div className="hero-overlay bg-opacity-60"></div>
@@ -19,7 +16,7 @@ const Banner = () => {
             <p className="mb-5 w-1/2 text-start">
             “The doctor of the future will no longer treat the human frame with drugs, but rather will cure and prevent disease with nutrition.” – Thomas Edison
             </p>
-            <p className=" bg-info text-white rounded-sm p-0.5 w-1/12 .btn .btn-info text-start hover:bg-cyan-600"><Link className="">Get Started</Link></p>
+            <p className="  rounded-sm p-0.5 w-1/12 text-start "><Link className=""><button className="btn btn-info text-white break-keep">Get Started</button></Link></p>
           </div>
         </div>
       </div>

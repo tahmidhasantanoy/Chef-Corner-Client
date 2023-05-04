@@ -5,7 +5,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-300">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,7 +29,7 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+              <Link to="/">Home</Link>
               </li>
 
               <li>
@@ -37,9 +37,9 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn  .btn-active p-2 normal-case rounded-sm text-xl hover:text-cyan-400 .active:bg-white focus:outline-none focus:ring focus:text-white">
+          <Link to="/" className="btn  .btn-active p-2 normal-case rounded-sm text-xl hover:text-cyan-400 .active:bg-white focus:outline-none focus:ring focus:text-white">
            <span className="text-info pe-1 font-medium"> Chef</span> <button className=".btn .btn-info bg-contain bg-info .rounded-md text-white p-0.5 ms-1">corner</button>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
