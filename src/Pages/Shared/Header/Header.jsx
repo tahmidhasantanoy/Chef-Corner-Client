@@ -1,6 +1,7 @@
 // import React from 'react';
 import { Link } from "react-router-dom";
 import "./Header.css";
+import ActiveLink from "../../Home/ActiveLink/ActiveLink";
 
 const Header = () => {
   return (
@@ -29,11 +30,11 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-              <Link to="/">Home</Link>
+              {/* <Link to="/">Home</Link> */}
               </li>
 
               <li>
-                <a>Blog</a>
+                <ActiveLink>Blog</ActiveLink>
               </li>
             </ul>
           </div>
@@ -44,11 +45,11 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/">Home</Link>
+              <ActiveLink to="/">Home</ActiveLink>
             </li>
 
             <li>
-              <a>Blog</a>
+              <ActiveLink to="/blogs">Blog</ActiveLink>
             </li>
           </ul>
         </div>

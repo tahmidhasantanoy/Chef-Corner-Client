@@ -6,37 +6,32 @@ import Error from "../Pages/Home/Error/Error";
 import Banner from "../Pages/Home/Banner/Banner";
 import Cards from "../Pages/Home/Cards/Cards";
 import Home from "../Pages/Home/Home/Home";
+import Blogs from "../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout/>,
-    errorElement:<Error/>,
-    children:[
+    element: <MainLayout />,
+    errorElement: <Error />,
+    children: [
       {
-        path:"/",
-        element:<Home/>,
+        path: "/",
+        element: <Home />,
         // loader :() => fetch('http://localhost:3000/chefInfo')
-
       },
       {
-        path:"/login",
-        element:<Login/>
+        path: "/login",
+        element: <Login />,
       },
       {
-        path:"/register",
-        element:<Register/>
+        path: "/register",
+        element: <Register />,
       },
       {
-        //Banner + cardss + 2 sec in  home
-        path:"/banner",
-        element:<Banner/>
+        path: "/blogs",
+        element: <Blogs />,
       },
-      {
-        path:"/cards",
-        element:<Cards/>
-      }
-    ]
+    ],
   },
 ]);
 
