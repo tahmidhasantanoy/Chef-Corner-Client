@@ -35,9 +35,7 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">TOP CHEFS!</h1>
                 <p className="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                Our chef would describe themself as a passionate, confident, and creative chef who can skilfully plan menus, prepare outstanding food, manage budgets, and lead a team of people to deliver quality of service to your customers.
                 </p>
 
               </div>
@@ -49,9 +47,7 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">FRESH INGREDIENTS!</h1>
                 <p className="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                Fresh food has not been dried, smoked, salted, frozen, canned, pickled, or otherwise preserved.We try to maintain those quality. 
                 </p>
               </div>
             </div>
@@ -62,9 +58,7 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">ATTRACTIVE FLAVORS!</h1>
                 <p className="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                Food is often prettiest when it's most delicious and looks full and abundant — at peak freshness and cooked well.We are certified for this.
                 </p>
               </div>
             </div>
@@ -76,11 +70,9 @@ const Home = () => {
                 className="max-w-sm rounded-lg shadow-2xl"
               />
               <div>
-                <h1 className="text-5xl font-bold">ATTRACTIVE FLAVORS!</h1>
-                <p className="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                <h1 className="text-5xl font-bold">PROFESSIONAL!</h1>
+                <p className="py-6 break-all">
+                Our professional chef is a trained, experienced culinarian & they worked in a professional kitchen setting and usually occupies a more managerial role, either running a single-person department or leading a team of cooks.
                 </p>
               </div>
             </div>
