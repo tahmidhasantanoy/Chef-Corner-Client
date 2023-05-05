@@ -10,6 +10,6 @@
 - Chef's profile has view button . When use click on this then they can able(if logged in) to see their receipes briefly.
 - Also user can make their account to enjoy all features.
 
-## 🔗 Netlify Link
+## 🔗 Live hosting link :
 
-[Live site link](https://chef-corner.web.app/)
+[Live project link](https://chef-corner.web.app/)
