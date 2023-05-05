@@ -1,5 +1,3 @@
-// import React from 'react';
-
 import { FaGlassCheers, FaThumbsUp } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 import Receipe from "./Receipe";

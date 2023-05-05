@@ -1,11 +1,11 @@
-
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
-  const { loginUser, handleGoogleSignIn,handleGithubSignIn } = useContext(AuthContext);
+  const { loginUser, handleGoogleSignIn, handleGithubSignIn } =
+    useContext(AuthContext);
   const [err, setErr] = useState("");
 
   const location = useLocation();
@@ -97,7 +97,10 @@ const Login = () => {
                   </button>
                 </div>
                 <div className="form-control mt-6">
-                  <button onClick={handleSignInWithGithub} className="btn rounded-sm" >
+                  <button
+                    onClick={handleSignInWithGithub}
+                    className="btn rounded-sm"
+                  >
                     <FaGithub style={{ fontSize: "1.5rem" }} className="mr-3" />
                     Sign in with Gihub
                   </button>

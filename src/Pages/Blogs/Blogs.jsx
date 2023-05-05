@@ -71,14 +71,12 @@ const Blogs = () => {
     );
   };
 
-  //  changes
   const printHandler = () => {
     // const printElement = pdfJSX();
     const printElement = ReactDOMServer.renderToString(pdfJSX());
 
     html2pdf().from(printElement).save();
   };
-  //  changes
 
   return (
     <div>

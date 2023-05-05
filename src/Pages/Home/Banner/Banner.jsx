@@ -18,7 +18,10 @@ const Banner = () => {
               nutrition.” – Thomas Edison
             </p>
             <p className="  rounded-sm p-0.5 w-3/12 text-start ">
-              <Link to="/healthTips" className="btn btn-info text-white break-keep">
+              <Link
+                to="/healthTips"
+                className="btn btn-info text-white break-keep"
+              >
                 Let's check
               </Link>
             </p>

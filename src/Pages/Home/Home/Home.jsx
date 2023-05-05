@@ -24,7 +24,6 @@ const Home = () => {
           products
         </p>
         <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-20 mx-20 my-5 ">
-          {/* hero */}
           <div className="hero .min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
               <div className="">

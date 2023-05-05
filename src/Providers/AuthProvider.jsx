@@ -1,5 +1,5 @@
 import {
-    GithubAuthProvider,
+  GithubAuthProvider,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
   getAuth,

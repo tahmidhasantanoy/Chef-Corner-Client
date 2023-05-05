@@ -1,4 +1,3 @@
-// import React from 'react';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -21,7 +20,8 @@ const Receipe = ({ receipe }) => {
         <p>{method}</p>
         <div>
           <h3 className="text-2xl">Ingredients :</h3>
-          <span className="ml-3">{ingredients[1]}</span> <hr className=" w-3/12" />
+          <span className="ml-3">{ingredients[1]}</span>{" "}
+          <hr className=" w-3/12" />
           <span className="ml-3">{ingredients[2]}</span>
           <hr className=" w-3/12" />
           <span className="ml-3">{ingredients[3]}</span>
@@ -41,7 +41,7 @@ const Receipe = ({ receipe }) => {
             className="btn rounded-full"
             disabled={disable}
           >
-            <FaHeart style={{fontSize:"2rem"}} onClick={notify} />
+            <FaHeart style={{ fontSize: "2rem" }} onClick={notify} />
           </button>
           <ToastContainer />
         </div>
