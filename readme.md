@@ -12,4 +12,4 @@
 
 ## 🔗 Netlify Link
 
-[https://polite-bublanina-370dc9.netlify.app/](https://polite-bublanina-370dc9.netlify.app/)
+[Live site link](https://chef-corner.web.app/)
