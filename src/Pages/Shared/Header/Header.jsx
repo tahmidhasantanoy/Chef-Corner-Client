@@ -39,10 +39,10 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>{/* <Link to="/">Home</Link> */}</li>
+              <li><ActiveLink to="/">Home</ActiveLink></li>
 
               <li>
-                <ActiveLink>Blog</ActiveLink>
+                <ActiveLink to="/blogs">Blog</ActiveLink>
               </li>
             </ul>
           </div>
