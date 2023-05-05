@@ -3,8 +3,7 @@
 import { FaGlassCheers, FaThumbsUp } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 import Receipe from "./Receipe";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ChefReceipe = () => {
   const specificShefData = useLoaderData();
@@ -19,11 +18,15 @@ const ChefReceipe = () => {
     recipes,
   } = specificShefData;
   return (
-    // Chef receipe Banner 
+    // Chef receipe Banner
     <div>
-     <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <LazyLoadImage src={chefImage} className="max-w-sm rounded-lg shadow-2xl" />
+          <LazyLoadImage
+            src={chefImage}
+            alt="Chef Image is here"
+            className="max-w-sm rounded-lg shadow-2xl"
+          />
           <div>
             <h1 className="text-5xl font-bold">{chefName}</h1>
             <p className="mt-2">{experience} experience</p>

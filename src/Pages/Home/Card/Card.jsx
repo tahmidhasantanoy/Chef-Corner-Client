@@ -11,7 +11,7 @@ const Card = ({ info }) => {
           <img
             className="w-24 h-24 mb-3 rounded-full shadow-lg"
             src={chefImage}
-            alt="Bonnie image"
+            alt="Chef Image"
           />
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
             {chefName}

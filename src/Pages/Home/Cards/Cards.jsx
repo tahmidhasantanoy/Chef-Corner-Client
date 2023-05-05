@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
@@ -6,7 +5,7 @@ const Cards = () => {
   const [chefInfo, setChefInfo] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/chefInfo")
+    fetch("https://chef-corner-server-tahmidhasantanoy.vercel.app/chefInfo")
       .then((res) => res.json())
       .then((data) => setChefInfo(data))
       .catch((err) => console.log(err.message));

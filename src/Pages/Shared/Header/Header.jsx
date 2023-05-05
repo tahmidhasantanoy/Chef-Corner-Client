@@ -68,8 +68,10 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <FaUserCircle className="mr-3" style={{ fontSize: "2rem" }} />
+       
           {user ? (
+            <>
+              <FaUserCircle className="mr-3" style={{ fontSize: "2rem" }} />
             <Link
               to="/"
               className=" btn-active font-medium hover:text-sky-400 rounded-sm p-2.5 m-0"
@@ -77,13 +79,17 @@ const Header = () => {
             >
               logOut
             </Link>
+            </>
           ) : (
+            
+             
             <Link
               to="/login"
               className=" btn-active font-medium hover:text-sky-400 rounded-sm p-2.5 m-0"
             >
               login
             </Link>
+            
           )}
         </div>
       </div>

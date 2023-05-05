@@ -32,18 +32,23 @@ const router = createBrowserRouter([
         element: <Blogs />,
       },
       {
-        path:"/chefReceipe/:id",
-        element:<PrivateRoute><ChefReceipe/></PrivateRoute>,
-        loader:({params}) => fetch(`http://localhost:3000/chefInfo/${params.id}`)
+        path: "/chefReceipe/:id",
+        element: (
+          <PrivateRoute>
+            <ChefReceipe />
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://chef-corner-server-tahmidhasantanoy.vercel.app/chefInfo/${params.id}`
+          ),
       },
       {
-        path:"/healthTips",
-        element:<HealthTips/>
-      }
+        path: "/healthTips",
+        element: <HealthTips />,
+      },
     ],
   },
 ]);
 
 export default router;
-
-
