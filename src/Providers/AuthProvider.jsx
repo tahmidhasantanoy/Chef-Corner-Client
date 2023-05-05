@@ -1,4 +1,3 @@
-// import React from 'react';
 import {
     GithubAuthProvider,
   GoogleAuthProvider,
@@ -18,7 +17,6 @@ const googleProvider = new GoogleAuthProvider();
 const gitProvider = new GithubAuthProvider();
 
 const AuthProvider = ({ children }) => {
-  // const user = {displayName:"kha kha"}
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 

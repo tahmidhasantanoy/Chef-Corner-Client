@@ -3,24 +3,22 @@ import Cards from "../Cards/Cards";
 import img1 from "../../../../public/images/Classic French Croissant.jpg";
 import img2 from "../../../../public/images/Roasted Cauliflower Salad.jpg";
 import img3 from "../../../../public/images/Spicy Pumpkin Soup.jpg";
-// import { Link } from "react-router-dom";
-// import { FaUtensils } from "react-icons/fa";
 import chef from "../../../../public/images/chef.jpg";
 import ingredien from "../../../../public/images/INGREDIENTS.jpg";
 import flavors from "../../../../public/images/FLAVORS.jpg";
 import professional from "../../../../public/images/professional.jpg";
 
 const Home = () => {
-  // const chefData = useLoaderData()
-
   return (
     <div>
       <Banner />
-      
+
       {/* section - 3 start*/}
 
       <div>
-        <h3 className="text-center text-6xl text-info font-semibold mb-3">Main serveice we provide</h3>
+        <h3 className="text-center text-6xl text-info font-semibold mb-3">
+          Main serveice we provide
+        </h3>
         <p className="text-center">
           Our services are the best in town, we provide great quality baked
           products
@@ -35,9 +33,11 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">TOP CHEFS!</h1>
                 <p className="py-6">
-                Our chef would describe themself as a passionate, confident, and creative chef who can skilfully plan menus, prepare outstanding food, manage budgets, and lead a team of people to deliver quality of service to your customers.
+                  Our chef would describe themself as a passionate, confident,
+                  and creative chef who can skilfully plan menus, prepare
+                  outstanding food, manage budgets, and lead a team of people to
+                  deliver quality of service to your customers.
                 </p>
-
               </div>
             </div>
           </div>
@@ -47,7 +47,9 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">FRESH INGREDIENTS!</h1>
                 <p className="py-6">
-                Fresh food has not been dried, smoked, salted, frozen, canned, pickled, or otherwise preserved.We try to maintain those quality. 
+                  Fresh food has not been dried, smoked, salted, frozen, canned,
+                  pickled, or otherwise preserved.We try to maintain those
+                  quality.
                 </p>
               </div>
             </div>
@@ -58,7 +60,9 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">ATTRACTIVE FLAVORS!</h1>
                 <p className="py-6">
-                Food is often prettiest when it's most delicious and looks full and abundant — at peak freshness and cooked well.We are certified for this.
+                  Food is often prettiest when it's most delicious and looks
+                  full and abundant — at peak freshness and cooked well.We are
+                  certified for this.
                 </p>
               </div>
             </div>
@@ -72,7 +76,10 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">PROFESSIONAL!</h1>
                 <p className="py-6 break-all">
-                Our professional chef is a trained, experienced culinarian & they worked in a professional kitchen setting and usually occupies a more managerial role, either running a single-person department or leading a team of cooks.
+                  Our professional chef is a trained, experienced culinarian &
+                  they worked in a professional kitchen setting and usually
+                  occupies a more managerial role, either running a
+                  single-person department or leading a team of cooks.
                 </p>
               </div>
             </div>
@@ -120,8 +127,6 @@ const Home = () => {
         </div>
       </div>
       {/* section - 3 end*/}
-
- 
     </div>
   );
 };

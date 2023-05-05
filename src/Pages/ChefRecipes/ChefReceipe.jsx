@@ -24,8 +24,8 @@ const ChefReceipe = () => {
           <p className="py-6">
             {bio}
           </p>
-          <button className="btn btn-primary mr-2"><FaThumbsUp className="mr-2" /> {totalLikes}</button>
-          <button className="btn btn-primary ml-2"><FaGlassCheers className="mr-2" /> {numRecipes}</button>
+          <button className="btn btn-info text-white mr-2"><FaThumbsUp style={{fontSize:"1.5rem"}} className="mr-2" /> {totalLikes}</button>
+          <button className="btn btn-info text-white ml-2"><FaGlassCheers style={{fontSize:"1.5rem"}} className="mr-2" /> {numRecipes}</button>
         </div>
       </div>
     </div>

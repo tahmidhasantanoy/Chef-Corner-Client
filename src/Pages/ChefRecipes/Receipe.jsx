@@ -12,7 +12,7 @@ const Receipe = ({ receipe }) => {
   const notify = () => toast("Add to favourite");
 
   return (
-    <div className="card w-96 bg-info text-primary-content">
+    <div className="card w-96 bg-cyan-600 text-primary-content my-12">
       <div className="card-body">
         <h2 className="card-title">
           Chef name : <span className="font-bold">{name}</span>{" "}
@@ -21,14 +21,14 @@ const Receipe = ({ receipe }) => {
         <p>{method}</p>
         <div>
           <h3 className="text-2xl">Ingredients :</h3>
-          <span>{ingredients[1]}</span> <hr className=" w-3/12" />
-          <span>{ingredients[2]}</span>
+          <span className="ml-3">{ingredients[1]}</span> <hr className=" w-3/12" />
+          <span className="ml-3">{ingredients[2]}</span>
           <hr className=" w-3/12" />
-          <span>{ingredients[3]}</span>
+          <span className="ml-3">{ingredients[3]}</span>
           <hr className=" w-3/12" />
-          <span>{ingredients[4]}</span>
+          <span className="ml-3">{ingredients[4]}</span>
           <hr className=" w-3/12" />
-          <span>{ingredients[5]}</span>
+          <span className="ml-3">{ingredients[5]}</span>
           <hr className=" w-3/12" />
         </div>
 
@@ -38,10 +38,10 @@ const Receipe = ({ receipe }) => {
           </span>
           <button
             onClick={() => setDisable(true)}
-            className="btn"
+            className="btn rounded-full"
             disabled={disable}
           >
-            <FaHeart onClick={notify} />
+            <FaHeart style={{fontSize:"2rem"}} onClick={notify} />
           </button>
           <ToastContainer />
         </div>
