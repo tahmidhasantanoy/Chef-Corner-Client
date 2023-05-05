@@ -60,7 +60,7 @@ const Home = () => {
               <div>
                 <h1 className="text-5xl font-bold">ATTRACTIVE FLAVORS!</h1>
                 <p className="py-6">
-                  Food is often prettiest when it's most delicious and looks
+                  Food is often prettiest when it is most delicious and looks
                   full and abundant — at peak freshness and cooked well.We are
                   certified for this.
                 </p>
